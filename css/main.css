@@ -1,0 +1,1490 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+font-family: proxima-nova, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+  font-size: 1em;
+  background-color: #FFF6F0;
+  color: #9B5D42;
+  text-align: left; 
+}
+
+ul,
+ol {
+  font-size: 1.125em;
+}
+
+a {
+    color: #9B5D42;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-family: Jeanne-moderno, serif;
+  line-height: 1.2;
+}
+h2 {
+    font-family: Jeanne-moderno, serif;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-weight: 400;
+	/*only found on services ?*/
+}
+
+h4 {
+  font-size: 1em;
+ 
+}
+
+h5 {
+  font-size: .875em;
+  font-weight: 400;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+
+.content-wrapper {
+  margin: 10px 0;
+}
+
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+html body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-image: url('../img/paper-texture.jpg');
+
+}
+
+body {
+
+  background:rgba(255,255,255,0.8); /* applies a 50% transparent white background */
+}
+
+
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-wrap;
+  margin: 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row-wrap;
+  margin: 0;
+  width: 80%;
+  flex-direction: column;
+}
+
+header .logo a {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row-wrap;
+
+}
+
+.logo img {
+ height: 40px;
+ width: 40px;
+ align-self: center;
+}
+
+.logo h1 {
+  margin: 0;
+  padding-left: 10px;
+  align-self: center;
+  font-size: 1.5em;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row-wrap;
+  width: 90%;
+  font-size: .875em;
+  padding-bottom: 10px;
+
+}
+
+/*-------- footer -------*/
+
+footer {
+  flex-direction: column;
+  background-color: #8f4c38;
+  text-align: center;
+  color: #FFEEE3;
+  margin: 0;
+  padding: 0;
+  opacity: .8;
+}
+
+footer .content-wrapper {
+  width: 70%;
+  margin: 20px 0;
+}
+footer .contact {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+
+}
+footer h4 {
+  margin: 0;
+  padding: 20px 20px 10px 20px;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  background-color: #FFEEE3;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons  p i {
+  font-size: 1.3125em;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*------Mobile------*/
+
+
+/*-------- hero/homepage-------*/
+.hero-area {
+  background-image: url('../img/soundcloudwebsite.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row-wrap;
+  border-top: 5px solid #C47962;
+}
+
+.tag {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.tag h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 190px 40px 0 40px;
+  padding: 10px;
+  background-color: #C47962;
+  color: #FFEEE3;
+  opacity: .90;
+  height: auto;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  text-align: center;
+  font-family: Jeanne-moderno, serif;
+  font-weight: lighter;
+font-style: normal;
+
+}
+
+
+/*-------- Portfolio/Graphic Design-------*/
+
+
+.graphic-portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.width-container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.portfolio-title h2 {
+  margin: 0;
+  padding: 20px 5px 0 5px;
+}
+
+.portfolio-title h4 {
+  padding: 0px 5px 20px 5px;
+  margin: 0;
+  font-weight: 300;
+
+}
+
+ .portfolio-title {
+  background-color: #C47962;
+  text-align: center;
+  color: #FFEEE3;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+.graphic-images {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 10px 0 0 0;
+
+
+}
+.graphic-images img {
+	width: 100%;
+	flex-shrink: 50;
+
+}
+
+.graphic-images figure {
+	margin: 5px;
+	height: 150px;
+	width: 150px;
+}
+
+.hidden-img {
+  display: none;
+
+}
+
+.button-container {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a .explore-btn {
+    overflow: hidden;
+    background-color: #C47962;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.125em;
+    line-height: 20px;
+    width: 150px;
+    height: 50px;
+    color: #FFEEE3;
+ 
+    outline: none;
+    margin: 20px 0 20px 0;
+ 
+
+  }
+
+  a .explore-btn:hover {
+    color: #AD535F;
+    background-color: #FFEEE3;
+    transition: ease-out .7s;
+    font-style: italic;
+    font-size: 1.2em;
+    opacity: .9;
+    border: 2px solid #C47962;
+    cursor: pointer;
+    overflow: hidden;
+
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+
+/*-------- Portfolio/Web Design-------*/
+
+.web-portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.web-images {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  margin: 20px 0 20px 0;
+  padding: 0;
+
+
+}
+.web-images img {
+  width: 100%;
+  flex-shrink: 50;
+
+}
+
+.web-images figure {
+  margin: 5px;
+  height: 150px;
+  width: 150px;
+}
+.web-portfolio .portfolio-title {
+  width: 100%;
+} 
+
+
+
+/*----------Services------------*/
+.services .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFEEE3;
+  margin: 0;
+  padding: 0;
+}
+
+.services .skills {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.services h2 {  
+  background-color: #C47962;
+  text-align: center;
+  color: #FFEEE3;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+
+}
+.skills h4 {
+  padding: 0;
+  height: 50px;
+  margin: 10px 0 10px 0;
+  text-decoration: underline;
+
+}
+
+
+.skill-one {
+  width: 45%;
+}
+
+.skill-two {
+  width: 45%;
+}
+
+
+/*-----------ABOUT------*/
+.content-wrapper {
+  margin: 0;
+}
+.content-wrapper h2 {
+  background-color: #C47962;
+  text-align: center;
+  color: #FFEEE3;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.about-img {
+  width: 100%;
+  flex-direction: flex-start;
+
+}
+.about-img img {
+  width: 100%;
+}
+
+.about-img figure {
+  margin: 0;
+}
+
+.about-copy {
+  width: 80%;
+  text-align: center;
+}
+.about-copy p {
+  padding: 0;
+  margin: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+}
+a .create-btn {
+    overflow: hidden;
+    background-color: #C47962;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.125em;
+    line-height: 20px;
+    width: 175px;
+    height: 50px;
+    color: #FFEEE3;
+
+    outline: none;
+    margin: 20px 0 20px 0;
+
+  }
+
+  a .create-btn:hover {
+    color: #AD535F;
+    background-color: #FFEEE3;
+    transition: ease-out .7s;
+    font-style: italic;
+    font-size: 1.2em;
+    opacity: .9;
+    border: 2px solid #C47962;
+    cursor: pointer;
+    overflow: hidden;
+
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+
+/* ==========================================================================
+PORFOLIO PAGE
+   ========================================================================== */
+.content-wrapper-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolio-title {
+  display: flex;
+  flex-direction: column;
+}
+.design-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 0 20px;
+  margin: 0;
+}
+
+.design-icons img {
+  height: 30px;
+  margin: 0 10px;
+}
+ .content-wrapper-portfolio p {
+  font-size: 14px;
+  font-style: italic;
+  width: 80%;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+.portfolio-page-gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.page-graphic-images {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+
+
+
+
+}
+.page-graphic-images img {
+  width: 100%;
+  flex-shrink: 50;
+
+}
+
+.page-graphic-images figure {
+  margin: 5px;
+  height: 150px;
+  width: 150px;
+}
+
+
+
+/*==========================================================================
+SERVICES PAGE
+========================================================================== */
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    background-color: #FFEEE3;
+}
+
+.services-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+
+}
+
+.services-page h3 {
+  font-weight: bolder;
+  margin-bottom: 0;
+
+
+}
+
+.services-for {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.services-for ul {
+    padding: 10px;
+}
+
+.services-for ul li {
+  padding-bottom: 20px;
+  padding-left: 10px;
+  font-size: .875em;
+
+
+}
+
+.services-for li::marker {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f186";
+
+}
+
+.content-wrapper h3 {
+  margin-bottom: 10px;
+ 
+}
+
+.skills {
+	margin-bottom: 30px;
+}
+
+
+/* ==========================================================================
+ABOUT PAGE
+   ========================================================================== */
+
+
+.about-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.about-page-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+.about-page-img img {
+  width: 100%;
+  flex-direction: flex-start;
+
+}
+
+.about-page-img figure {
+  margin: 0;
+}
+
+.about-page-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 80%;
+  margin: 0;
+  padding: 10px;
+  font-size: .875em;
+  text-align: center;
+
+
+}
+
+.about-page-copy p {
+   font-weight: bolder;
+   line-height: 18px;
+   margin-top: 0;
+   font-size: 1em;
+}
+
+
+
+/*==========================================================================
+CONTACT PAGE
+========================================================================== */
+
+.contact-wrapper h2 {
+  background-color: #C47962;
+  text-align: center;
+  color: #FFEEE3;
+  width: 100%;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.contact-wrapper p {
+  color: #C47962;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 80px 10px 80px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+
+}
+.form-group {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.form-group input {
+  text-align: left;
+  width: 100%;
+  padding: 1px;
+  font-size: .875em;
+  border: 1px solid #C47962;
+  font-style: italic;
+
+
+}
+.form-group textarea {
+  width: 100%;
+  padding: 1px;
+  font-size: .875em;
+  border: 1px solid #C47962;
+  font-style: italic;
+
+}
+
+::placeholder {
+  color: #C47962;
+  opacity: .8;
+}
+
+
+.btn-submit {
+    overflow: hidden;
+    background-color: #C47962;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.125em;
+    line-height: 20px;
+    width: 150px;
+    height: 50px;
+    color: #FFEEE3;
+    font-weight: bolder;
+    outline: none;
+    margin: 20px 0 20px 0;
+  }
+
+  .btn-submit:hover {
+    color: #AD535F;
+    background-color: #FFEEE3;
+    transition: ease-out .7s;
+    font-style: italic;
+    font-size: 1.2em;
+    opacity: .9;
+    border: 2px solid #C47962;
+    cursor: pointer;
+    overflow: hidden;
+  }
+.contact-container h5 {
+  text-align: center;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+.graphic-images figure {
+  margin: 5px;
+  height: 175px;
+  width: 175px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports that meet the condition */
+/*Tablet styles here*/
+ /* General styles */
+
+
+  h1 {
+      font-size: 2.5em;
+    }
+ 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+  h3 {
+	font-size: 1.5em;
+	/*only found on services ?*/
+}
+  h4 {
+    font-size: 1.25em;
+     line-height: 1.25;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  a {
+    font-size: 1.15em;
+  }
+  p {
+  	font-size: 1.25em;
+  }
+
+ 
+
+  /* Header */
+
+  header .content-wrapper {
+    width: 90%;
+  }
+ 
+  header {
+    justify-content: space-around;
+    }
+  header .content-wrapper {
+    justify-content: space-between;
+    flex-direction: row;
+    }
+  header figure {
+    width: 50%;
+    }
+
+  header a {
+    flex-direction: flex-start;
+
+  }
+
+  .logo h1 {
+    padding-left: 20px;
+  }
+
+  header .logo a {
+    justify-content: flex-start;;
+  }
+  header nav {
+    width: 49%;
+    padding-bottom: 0;
+    }
+  header nav ul {
+     justify-content: flex-start; 
+    }
+
+
+/*---footer---*/
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+footer .social-icons p {
+  height: 45px;
+  width: 45px;
+}
+
+footer .social-icons  p i {
+  font-size: 1.5em;
+}
+
+/*hero*/
+
+.tag h1 {
+    padding: 50px 80px;
+}
+
+/*graphic*/
+
+
+.graphic-images figure {
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+.graphic-images .hidden {
+  visibility: visible;
+}
+
+.content-wrapper-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*web */
+
+.web-images figure {
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+}
+
+
+
+/*about*/
+
+.about {
+  flex-direction: row;
+}
+.about-img {
+  width: 55%;
+  flex-direction: flex-start;
+
+}
+.about-img img {
+  width: 100%;
+}
+
+.about-img figure {
+  margin: 0;
+}
+
+.about-copy {
+  width: 45%;
+}
+
+.about-copy h5 {
+  margin: 0; 
+  padding: 20px;
+}
+
+/*services*/
+
+.skills {
+  width: 85%;
+}
+
+.skills h4 {
+  padding: 0;
+  height: auto;
+  margin: 10px 0 10px 0;
+}
+
+.skills h5 {
+  margin: 0;
+}
+
+/*---------PORTFOLIO PAGE -------*/
+
+.content-wrapper-portfolio p {
+  width: 50%;
+}
+
+
+.page-graphic-images figure {
+  margin: 5px;
+  height: 225px;
+  width: 225px;
+}
+.width-container {
+	width: 70%;
+	margin: 0 auto;
+}
+.design-icons {
+	width: 25%;
+}
+.design-icons img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+/*------ ABOUT PAGE -----*/
+
+.about-page-wrapper {
+  flex-direction: row;
+  flex-flow: nowrap;
+
+}
+.about-page-img {
+  width: 60%;
+  flex-direction: flex-start;
+
+}
+.about-page-img img {
+  width: 100%;
+}
+
+.about-page-img figure {
+  margin: 0;
+}
+
+.about-page-copy {
+  width: 40%;
+}
+
+.about-page-copy p {
+
+  font-size: 1.25em;
+  margin: 2 0 10px 0;
+  line-height: 20px;
+}
+
+/*------ Services page -----*/
+
+ .services-for ul li {
+  	font-size: 1.15em;
+  }
+
+
+
+/*------ Contact page -----*/
+
+.contact-wrapper p {
+  margin: 10px 150px 10px 150px;
+}
+
+form {
+  flex-direction: row;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+
+
+}
+
+
+ 
+ /* ==========================================================================
+  DESKTOP
+     ========================================================================== */
+  
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+ /*.graphic-images .hidden-img {
+    display: inline-flex;
+  }*/
+ 
+  h2 {
+    font-size: 2.5em;
+    line-height: 1.333;
+  }
+  h3 {
+	font-size: 2em;
+	/*only found on services ?*/
+}
+  h4 {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+  h5 {
+    font-size: 1.25em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  a {
+    font-size: 1.15em;
+  }
+
+ .button-container {
+    font-size: 1.3em;
+  }
+
+  a .create-btn {
+    line-height: 20px;
+    width: 225px;
+    height: 60px;
+
+  }
+
+
+.logo h1 {
+  font-size: 2em;
+}
+
+header nav {
+  width: 40%;
+}
+
+header nav a {
+  font-size: 1.5em;
+}
+
+
+.tag h1 {
+  font-size: 2em;
+}
+
+footer .social-icons p {
+
+  height: 55px;
+  width: 55px;
+}
+
+/*graphic home*/
+
+.graphic-images figure {
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+}
+
+/*web home */
+
+.web-images figure {
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+}
+
+
+.skills {
+  margin: 20px 0 20px 0;
+  width: 75%;
+
+}
+
+.about-copy {
+	width: 50%;
+	margin: 0 50px;
+}
+
+/*portfolio-page*/
+.portfolio-page-gallery {
+	width: 90%;
+}
+.page-graphic-images figure {
+	margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+.design-icons {
+	width: 20%;
+}
+.design-icons img {
+  height: 50px;
+  margin: 0 10px;
+}
+
+/*about-page*/
+
+.about-page-wrapper{
+
+  justify-content: space-around;
+}
+.about-page-img {
+  justify-content: flex-start;
+  width: 49%;
+}
+.about-page-copy {
+    justify-content: flex-start;
+    width: 50%;
+}
+.about-page-copy p {
+  font-size: 1.75em;
+  line-height: 26px;
+  margin-left: 20px;
+  padding-right: 30px;
+}
+
+
+/*------ Services page -----*/
+.services-page {
+	width: 90%;
+	margin: 0 auto;
+}
+ .services-for ul li {
+  	font-size: 1.5em;
+
+  }
+
+
+/*Footer*/
+
+footer .social-icons{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+}
+
+
+
+
+/* ==========================================================================
+LARGERRRRR DESKTOP
+========================================================================== */
+  
+@media only screen and (min-width: 1400px) {
+/*Desktop styles here*/
+
+
+
+/*graphic portfolio*/
+
+.graphic-images figure {
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+}
+
+/*web portfolio*/
+
+.web-images figure {
+  margin: 10px;
+  height: 280px;
+  width: 280px;
+}
+
+
+
+
+}
+
+/*------*/
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
